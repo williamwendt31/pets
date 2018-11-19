@@ -1,0 +1,16 @@
+.errors {
+    color: red;
+    margin: 0.5rem 0;
+}
+
+form {
+    margin: 2rem 0 1rem;
+}
+
+.petInfo {
+    margin: 0.5rem 0;
+}
+
+button {
+    margin: 0.5rem;
+}

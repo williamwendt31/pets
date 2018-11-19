@@ -1,0 +1,12 @@
+#wrapper {
+    width: 75rem;
+    margin: 0 auto;
+}
+
+button {
+    margin: 0.5rem;
+}
+
+#title {
+    margin: 2rem 0;
+}

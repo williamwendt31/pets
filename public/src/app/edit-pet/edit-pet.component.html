@@ -1,0 +1,48 @@
+<div id="main-content">
+    <h4>Edit this pet</h4>
+    <form (submit)="onSubmit()">
+      <ul *ngIf="errors">
+        <li class="errors" *ngFor="let message of errors">
+          {{ message }}
+        </li>
+      </ul>
+      <p class="errors" *ngIf="dupError">{{ dupError }}</p>
+  
+      <div class="petInfo">
+        <label for="pet.name">Pet Name: </label>
+        <input type="text" name="pet.name" [(ngModel)]="pet.name">
+      </div>
+  
+      <div class="petInfo">
+        <label for="pet.type">Pet Type: </label>
+        <input type="text" name="pet.type" [(ngModel)]="pet.type">
+      </div>
+  
+      <div class="petInfo">
+        <label for="pet.description">Description: </label>
+        <input type="text" name="pet.description" [(ngModel)]="pet.description">
+      </div>
+  
+      <h4>Skills (optional)</h4>
+  
+      <div class="petInfo">
+        <label for="pet.skill_one">Skill One: </label>
+        <input type="text" name="pet.skill_one" [(ngModel)]="pet.skill_one">
+      </div>
+  
+      <div class="petInfo">
+        <label for="pet.skill_two">Skill Two: </label>
+        <input type="text" name="pet.skill_two" [(ngModel)]="pet.skill_two">
+      </div>
+  
+      <div class="petInfo">
+        <label for="pet.skill_three">Skill Three: </label>
+        <input type="text" name="pet.skill_three" [(ngModel)]="pet.skill_three">  
+      </div>
+  
+      <div class="petInfo">
+        <input type="submit" value="Add Pet">
+      </div>
+    </form>
+    <a [routerLink]="['/pets']"><button>Cancel</button></a>
+  </div>
